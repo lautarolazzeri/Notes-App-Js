@@ -22,10 +22,10 @@ function addNewNote(text = "") {
     <textarea class="${text ? "hidden" : ""}"></textarea>
     `;
 
-    const editBtn = document.querySelector(".edit");
-    const deleteBtn = document.querySelector(".delete");
-    const main = document.querySelector(".main");
-    const textArea = document.querySelector("textarea");
+    const editBtn = note.querySelector(".edit");
+    const deleteBtn = note.querySelector(".delete");
+    const main = note.querySelector(".main");
+    const textArea = note.querySelector("textarea");
     textArea.value = text;
     main.innerHTML = marked(text);
 
