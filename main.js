@@ -33,7 +33,7 @@ function addNewNote(text = "") {
         note.remove();
         updateLS()
     });
-
+ 
     editBtn.addEventListener("click", () => {
         main.classList.toggle("hidden");
         textArea.classList.toggle("hidden");
@@ -53,3 +53,5 @@ function updateLS() {
     notesText.forEach((note) => notes.push(note.value));
     localStorage.setItem("notes", JSON.stringify(notes));
 }
+
+
